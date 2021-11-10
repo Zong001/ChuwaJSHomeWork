@@ -56,3 +56,5 @@ console.log(newString1.length);
 const newString2 = string.replace(regex, "").toLocaleLowerCase();
 console.log(newString2);
 console.log(newString2.length);
+console.log(string.trim().split(/[- ]+/).join(" "));
+// console.log(newString1.length);
