@@ -28,27 +28,53 @@ const tableInfo = [
 ];
 // console.log(Object.keys(tableInfo[0]));
 
+// const myTable = document.createElement("table");
+// const thread = myTable.createTHead();
+// const row = thread.insertRow();
+
+// Object.keys(tableInfo[0]).forEach((ele) => {
+//   if (ele == "Phone") {
+//     ele = `${ele}\n#`;
+//   }
+//   row.insertCell().innerHTML = ele;
+// });
+
+// for (let i of tableInfo) {
+//   const bodyRow = myTable.insertRow();
+//   // console.log(i);
+//   for (let j in i) {
+//     // console.log(i[j]);
+//     bodyRow.insertCell().innerHTML = i[j];
+//   }
+// }
+
+// document.getElementById("myTable").appendChild(myTable);
+
 const myTable = document.createElement("table");
-const thread = myTable.createTHead();
-const row = thread.insertRow();
+document.getElementById("myTable").appendChild(myTable);
+
+let thead = myTable.createTHead();
+let rowHead = thead.insertRow();
+let tbody = myTable.createTBody();
 
 Object.keys(tableInfo[0]).forEach((ele) => {
   if (ele == "Phone") {
     ele = `${ele}\n#`;
   }
-  row.insertCell().innerHTML = ele;
+  let th = document.createElement("th");
+  let text = document.createTextNode(ele);
+  th.appendChild(text);
+  rowHead.appendChild(th);
 });
 
-for (let i of tableInfo) {
-  const bodyRow = myTable.insertRow();
-  // console.log(i);
-  for (let j in i) {
-    // console.log(i[j]);
-    bodyRow.insertCell().innerHTML = i[j];
+for (let ele of tableInfo) {
+  let rowBody = tbody.insertRow();
+  for (key in ele) {
+    let cell = rowBody.insertCell();
+    let text = document.createTextNode(ele[key]);
+    cell.appendChild(text);
   }
 }
-
-document.getElementById("myTable").appendChild(myTable);
 
 //2
 
