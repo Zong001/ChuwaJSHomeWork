@@ -67,10 +67,10 @@ const list = ["HTML", "JavaScript", "CSS", "React", "Redux", "Java"];
 
 const parent = document.getElementById("parent");
 
-const myOl = document.createElement("ol");
+//const myOl = document.createElement("ol");
 // document.getElementById("Ol").appendChild(myOl);
 
-parent.insertBefore(myOl, myOl.nextSibling);
+//parent.insertBefore(myOl, myOl.nextSibling);
 // const myOl = document.createElement("ol");
 
 // list.forEach((ele) => {
