@@ -100,8 +100,9 @@ function printList(params) {
     .getAllTodos()
     .then((value) => {
       console.log(value);
-      value.todos.forEach((element, index) => {
-        unorderList.appendChild(creatListItem(element, index)); //这个index是哪里定义的呢🤔
+      value.todos.forEach((element, a) => {
+        unorderList.appendChild(creatListItem(element, a)); //这个index是哪里定义的呢🤔
+        //搞明白了https://www.w3schools.com/jsref/jsref_foreach.asp#100
       });
     })
     .catch((error) => console.log(error));
