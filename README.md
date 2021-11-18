@@ -1,7 +1,7 @@
 # ChuwaJSHomeWork
 
 ## homework1
-[Link](https://htmlpreview.github.io/?https://github.com/Zong001/ChuwaJSHomeWork/blob/main/Zongcheng_Wang_assignment1.html)
+[Link](https://htmlpreview.github.io/?https://github.com/Zong001/ChuwaJSHomeWork/blob/main/Zongcheng_Wang_assignment1.html/)
 
 ## homework2
 ## homework3
