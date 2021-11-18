@@ -74,6 +74,7 @@ function addUx(event) {
   todoApi.addTodo(obj).then((messsage) => {
     alert("add " + event.content + " " + event.addTodo);
   });
+  InputText.value = "";
   printList();
 }
 
